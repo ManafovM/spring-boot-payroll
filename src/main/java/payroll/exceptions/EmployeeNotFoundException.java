@@ -1,7 +1,7 @@
-package payroll;
+package payroll.exceptions;
 
 public class EmployeeNotFoundException extends RuntimeException {
-    EmployeeNotFoundException(long id) {
+    public EmployeeNotFoundException(long id) {
         super("Could not find employee" + id);
     }
 }

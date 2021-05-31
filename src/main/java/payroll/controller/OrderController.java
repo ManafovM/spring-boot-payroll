@@ -1,4 +1,4 @@
-package payroll;
+package payroll.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.hateoas.CollectionModel;
@@ -9,6 +9,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import payroll.entity.Order;
+import payroll.entity.Status;
+import payroll.exceptions.OrderNotFoundException;
+import payroll.repository.OrderRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;

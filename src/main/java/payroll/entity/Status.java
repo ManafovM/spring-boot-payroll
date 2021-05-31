@@ -1,4 +1,4 @@
-package payroll;
+package payroll.entity;
 
 public enum Status {
     IN_PROGRESS,

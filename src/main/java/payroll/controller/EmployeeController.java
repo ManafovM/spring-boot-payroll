@@ -1,4 +1,4 @@
-package payroll;
+package payroll.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.hateoas.CollectionModel;
@@ -6,6 +6,9 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import payroll.entity.Employee;
+import payroll.exceptions.EmployeeNotFoundException;
+import payroll.repository.EmployeeRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
