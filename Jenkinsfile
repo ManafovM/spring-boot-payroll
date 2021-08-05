@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'gradle:6.3-jdk14'
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
